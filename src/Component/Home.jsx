@@ -206,7 +206,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="mikailPicture">
+            <div className="mikailPicture lg:hidden">
               <p>p</p>
               <img src={img} alt="author" />
             </div>
