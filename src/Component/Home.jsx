@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "../assets/Screenshot from 2021-12-08 17-09-55.png";
+import img from "../assets/mikail.png";
 import imgs from "../assets/react.svg";
 import image2 from "../assets/Screenshot from 2022-10-11 16-56-30.png";
 import image3 from "../assets/Screenshot from 2022-10-11 17-02-13.png";
@@ -15,12 +15,11 @@ import image10 from "../assets/kisspng-computer-icons-html5-scalable-vector-grap
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import {
   Email,
-  Facebook,
   FacebookOutlined,
-  FacebookRounded,
   GitHub,
   LinkedIn,
   Twitter,
+  ViewAgenda,
 } from "@mui/icons-material";
 
 const Home = () => {
@@ -37,7 +36,7 @@ const Home = () => {
 
   return (
     <div className="Homepage flex flex-col lg:flex-row  ">
-      <aside className="media mt-[13rem] lg:w-[15%]">
+      <aside className="hidden lg:flex lg:flex-col justify-center items-center  media mt-[13rem] lg:w-[10%]">
         <a href="http://web.facebook.com/?_rdc=1&_rdr" target="_blank">
           <FacebookOutlined className="socialMedias" />
         </a>
@@ -60,25 +59,19 @@ const Home = () => {
         <p className="boder"></p>
       </aside>
       <aside className="Home_Aside">
-        <div id="Home" className="p">
+        <div id="Home" className="p mt-[50px] mx-[10px]">
           <i>Hi, I'm</i>
-          <p className="lg:text-[3.5rem] mt-[1rem] text-[#f0c4f9]">
-            {" "}
-            Abdul-raheem{" "}
-          </p>
-          <p className="lg:text-[3.5rem] lg:mt-[1rem] text-[#f0c4f9]">
-            {" "}
-            Mikail K.
+          <p className="lg:text-[3.5rem] mt-[1rem]">Abdul-raheem Mikail</p>
+          <p className="lg:text-[3.5rem] lg:mt-[1rem] "> K.</p>
+          <p className="  text-[1.5rem] lg:text-[1.9rem] mt-6 ">
+            I create overwhelming Front-End best Users Experience
           </p>
         </div>
-        <div className="w-[98vw] lg:w-[100%] flex flex-col lg:flex-row lg:justify-evenly mt-[4rem]">
-          <div className=" Engr font-serif w-[90%] lg:w-[50%] ml-4 ">
-            <p className="  text-[1.5rem] lg:text-[2.5rem] mb-4">
-              Front-End Engineer
-            </p>
+        <div className="w-[100%] flex flex-col  lg:justify-evenly mt-[4rem] font-thin">
+          <div className=" Engr w-[90%] ml-4 ">
             <p className="text-[1.3rem] mb-6">
-              Hi,it's my pleasure hosting you on my Web site.For diligent and
-              mind blowing interest in{" "}
+              Hi,it's my pleasure hosting you on my page.For diligent and mind
+              blowing interest in{" "}
               <strong>
                 <em> Web & Application Development,</em>
               </strong>{" "}
@@ -89,16 +82,94 @@ const Home = () => {
               technological advancement of this century
             </p>
             <a href="mailto:abdulraheemmukaila6@gmail.com">
-              <button
-                className="getInTouch border-[1px] p-[3%] text-[1.3rem] outline-[transparent"
-                style={{ borderRadius: "5px" }}
-              >
+              <button className="getInt border-[1px] font-bold p-[3%] text-[1.3rem] outline-[transparent] hover:text-[#321f56] hover:bg-[#f0c4f9] rounded-[5px] lg:w-[40%]">
                 Get in Touch
               </button>
             </a>
-            {/* <p className="mt-6 mb-6">hi</p> */}
           </div>
-          <div className="mikail  hidden lg:flex w-[40%]">
+        </div>
+        <section
+          className="w-[98vw] flex flex-col lg:flex-row lg:w-[100%]  justify-center items-center mt-[5rem] lg:mt-[10rem] px-[1rem]"
+          id="About"
+        >
+          {" "}
+          <div>
+            <div className="flex flex-row justify-start items-center">
+              <p className=" my-4 text-[1.5rem] lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
+                About me{" "}
+              </p>
+              <p className="line"></p>
+            </div>
+            <div className="lg:w-[100%] lg:text-[1.2rem]">
+              <strong className="text-[1.4rem]">
+                <i> Mikail Abdulraheem</i>
+              </strong>{" "}
+              is the name, i'm a Front-end engineer i base in NIGERIA am a
+              passionate,flexible Enthusiastical lover of programmatic problem
+              solving in colaboration with some awesome Technological tools that
+              facilitate outstanding and Excellent user experience.
+              <br />
+              <br />
+              <p>
+                i've over 3 years experience working around Web and Application
+                development,i possess a high level of Team spirit and
+                colaboration optimun instinct of critical thinking and deep
+                sense of programmatical intelligence gathering.
+                <br />
+                <br />
+                <p>
+                  Also amist many <em>dispodence ailment</em> many Developers is
+                  suffering from is{" "}
+                  <strong>
+                    emotional fatigue or emotional imbalance,however
+                  </strong>{" "}
+                  i discover this earlier in my career and grow my maturity
+                  around creating a reuseable function with multiple parameters
+                  that regulate it,all it need to call it is a suitable Argument{" "}
+                  <img
+                    className="w-[2rem]"
+                    src="https://www.freeiconspng.com/thumbs/emoji-png/heart-emoji-png-2.png"
+                    alt="emoji"
+                  />
+                </p>
+              </p>
+              <br />
+              <i className="text-[1.3rem] ">
+                Few of My Technological tools are:
+              </i>
+              <div className="flex  flex-col lg:flex-row gap-6 mt-10">
+                <div className="flex  flex-col gap-2">
+                  {skill.splice(0, 4).map((s) => (
+                    <ul key={s} className="flex flex-wrap gap-[1rem]">
+                      <img
+                        className="w-[2rem] h-[1rem] bg-[none]  mt-[0.25rem]"
+                        src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
+                        alt="picture"
+                      />{" "}
+                      <li>{s}</li>{" "}
+                    </ul>
+                  ))}
+                </div>
+                <div className="flex npx update-browserslist-db@latest flex-col gap-2">
+                  {skill.map((s) => (
+                    <ul key={s} className="flex flex-wrap gap-[1rem]">
+                      <img
+                        className="w-[2rem] mt-[0.25rem] h-[1rem]"
+                        src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
+                        alt="picture"
+                      />{" "}
+                      <li>{s}</li>{" "}
+                    </ul>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mikailPicture">
+            <p>-</p>
+            <img src={img} alt="author" />
+          </div>
+          {/* <div className="mikail  lg:hidden  w-[40%]">
             <div className="mikail-inner">
               <div className="mikail-front">
                 <Link to="About">
@@ -125,93 +196,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <section
-          className="w-[98vw] lg:w-[100%] mt-[5rem] lg:mt-[10rem] px-[1rem]"
-          id="About"
-        >
-          <div className="flex flex-col lg:flex-row">
-            <p className=" my-4 text-[1.5rem] lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
-              About me{" "}
-            </p>
-            <p className="line"></p>
-          </div>
-          <div className="  lg:w-[90%] font-serif  lg:text-[1.2rem]">
-            <strong className="text-[1.4rem]">
-              <i> Mikail Abdulraheem</i>
-            </strong>{" "}
-            is the name, i'm from
-            <img
-              className="object-contain lg:w-auto lg:h-auto  hover:animate-pulse my-[1rem]"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ04C-y7Rr1l1susoIkd4PTzTysFSPnwyZaljlOWgTH5UXCcyFiEUplP63Mwwi_WANtJmw&usqp=CAU"
-              alt="flag"
-            />{" "}
-            am a passionate,flexible Enthusiastical lover of programmatic
-            problem solving in colaboration with some awesome Technological
-            tools that facilitate outstanding and Excellent user experience.
-            <br />
-            <br />
-            <p>
-              {" "}
-              i've over 3 years experience working around Web and Application
-              development,i possess a high level of Team spirit and colaboration
-              optimun instinct of critical thinking and deep sense of
-              programmatical intelligence gathering.
-              <br />
-              <br />
-              <p>
-                Also amist many <em>dispodence ailment</em> many Developers is
-                suffering from is{" "}
-                <strong>
-                  emotional fatigue or emotional imbalance,however
-                </strong>{" "}
-                i discover this earlier in my career and grow my maturity around
-                creating a reuseable function with multiple parameters that
-                regulate it,all it need to call it is a suitable Argument{" "}
-                <img
-                  className="w-[2rem]"
-                  src="https://www.freeiconspng.com/thumbs/emoji-png/heart-emoji-png-2.png"
-                  alt="emoji"
-                />
-              </p>
-            </p>
-            <br />
-            <i className="text-[1.3rem] text-[#f0c4f9] ">
-              Few of My Technological tools are:
-            </i>
-            <div className="flex  flex-col lg:flex-row gap-6 mt-10">
-              <div className="flex  flex-col gap-2">
-                {skill.splice(0, 4).map((s) => (
-                  <ul key={s} className="flex flex-wrap gap-[1rem]">
-                    <img
-                      className="w-[2rem] h-[1rem] bg-[none]  mt-[0.25rem]"
-                      src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
-                      alt="picture"
-                    />{" "}
-                    <li>{s}</li>{" "}
-                  </ul>
-                ))}
-              </div>
-              <div className="flex npx update-browserslist-db@latest flex-col gap-2">
-                {skill.map((s) => (
-                  <ul key={s} className="flex flex-wrap gap-[1rem]">
-                    <img
-                      className="w-[2rem] mt-[0.25rem] h-[1rem]"
-                      src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
-                      alt="picture"
-                    />{" "}
-                    <li>{s}</li>{" "}
-                  </ul>
-                ))}
-              </div>
-            </div>
-            <div className="mikailPicture lg:hidden">
-              <p>p</p>
-              <img src={img} alt="author" />
-            </div>
-          </div>
-          <p></p>
+          </div> */}
         </section>
         <section
           id="services"
@@ -237,7 +222,8 @@ const Home = () => {
           </div>
 
           <div className="div  mt-[2rem] ">
-            <div>
+            <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
+              <p>Featured Project</p>
               <p className="title ">Weather Tips</p>
               <p className="you lg:mr-[-45]">
                 <strong> Weather Tips</strong>: is an Educative App, design and
@@ -245,8 +231,8 @@ const Home = () => {
                 Tornado,flood and other
               </p>
               <p
-                className="flex  flex-row gap-4  lg:gap-8 font-serif
-              lg:ml-6  mt-6  lg:text-[1.2rem]"
+                className="flex  flex-row gap-4  lg:gap-8 
+               mt-6  lg:text-[1.2rem]"
               >
                 <p>JavaScript</p>
                 <p>Tailwind</p>
@@ -261,23 +247,21 @@ const Home = () => {
               alt="weather"
             />
           </div>
-          <div className="div mt-[7rem] flex-col-reverse">
+          <div className="div mt-[7rem] ">
             <img
               src={image3}
               className="hidden lg:flex w-[90%] lg:w-[50%]"
               alt="gitSearch"
             />
-            <div>
-              <p className="title lg:ml-[14rem]">Git Search</p>
+            <div className="lg:z-[1] lg:relative lg:right-[2rem] flex flex-col justify-end items-end">
+              <p>Featured Project</p>
+              <p className="title">Git Search</p>
               <p className="you">
                 <strong>Git Search</strong>: make available to users the comfort
                 of locating a particular Github user at a very stressfree
                 maximun rate
               </p>
-              <p
-                className="flex  flex-row gap-[1rem] lg:gap-8 font-serif
-              lg:ml-6  mt-6  text-[1.2rem]"
-              >
+              <p className="flex  flex-row gap-[1rem] lg:gap-6 mt-6  text-[1.2rem]">
                 <p>JavaScript</p>
                 <p>Tailwind</p>
                 <p>React</p>
@@ -291,7 +275,8 @@ const Home = () => {
             />
           </div>
           <div className="mt-[7rem] div">
-            <div>
+            <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
+              <p>Featured Project</p>
               <p className="title">M&K Venture</p>
               <p className="you">
                 <strong>
@@ -300,8 +285,8 @@ const Home = () => {
                 </strong>
               </p>
               <p
-                className="flex  flex-row gap-[1rem] lg:gap-8 font-serif
-              lg:ml-6  mt-6  lg:text-[1.2rem]"
+                className="flex  flex-row gap-[1rem] lg:gap-8
+                mt-6  lg:text-[1.2rem]"
               >
                 <p>TypeScript</p>
                 <p>Tailwind</p>
@@ -310,7 +295,7 @@ const Home = () => {
               </p>
             </div>
 
-            <img src={image4} className="w-[90%] lg:w-[50%]" alt="product" />
+            <img src={image4} className="w-[90%] lg:w-[55%]" alt="product" />
           </div>
           <div className="div  mt-[7rem] ">
             <img
@@ -318,16 +303,17 @@ const Home = () => {
               className="hidden lg:flex w-[90%] lg:w-[50%]"
               alt="youtube"
             />
-            <div className="mt-[1rem]">
-              <p className="title lg:ml-[13rem]">Youtube Cloned</p>
+            <div className="mt-[1rem] lg:z-[1] lg:relative lg:right-[2rem] flex flex-col justify-end  items-end">
+              <p>Featured project</p>
+              <p className="title">Youtube Cloned</p>
               <p className="you">
                 <strong> Youtube cloned</strong>: is a project that copy the
                 features of Youtube in providing quality and standardized
                 Movies,TV show and others
               </p>
               <p
-                className=" flex  flex-row gap-[0.5rem] lg:gap-8 font-serif
-              lg:ml-6  mt-6 lg:text-[1.2rem]"
+                className=" flex  flex-row gap-[0.5rem] lg:gap-4 
+                mt-6 lg:text-[1.2rem]"
               >
                 <p>JavaScript</p>
                 <p>Tailwind</p>
@@ -346,12 +332,18 @@ const Home = () => {
         <section className="w-[95vw] lg:w-[100%] mt-[15rem]">
           <p
             id="store"
-            className=" lg:w-auto lg:tracking-[3px] lg:text-[2.5rem] text-[#f0c4f9] text-center font-serif"
+            className=" lg:w-auto lg:tracking-[3px] lg:text-[2.5rem] text-[#f0c4f9] text-center"
           >
             Projects in view, cracking the Glass of Store{" "}
           </p>
           <div className="w-[100vw] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem]">
-            <p className="project"></p>
+            <div className="project">
+              <GitHub />
+              <p>
+                M&K: is a guarantee and an expert platform for sale and
+                distribution of quality Items of different kind
+              </p>
+            </div>
             <p className="project"></p>
             <p className="project"></p>
             <p className="project"></p>
@@ -361,13 +353,13 @@ const Home = () => {
         </section>
         <section id="contact" className="w-[95vw] lg:w-[100%]">
           <div className=" mt-[5rem] gap-[1.5rem] lg:mt-[13rem] flex flex-col justify-center items-center">
-            <p className="w-[90%] font-serif text-center">
+            <p className="w-[90%] text-center">
               Would you like a touch of vouch and a zeal of confidence
             </p>
             <p className="text-[2.3rem] text-[#f0c4f9] mt-[1.3rem]">
               Get In Touch
             </p>
-            <p className="w-[90%] lg:w-auto  lg:leading-[2.7rem] lg:m-[3rem] text-center  lg:text-[1.4rem] font-serif">
+            <p className="w-[90%] lg:w-auto  lg:leading-[1.7rem] lg:m-[3rem] text-center  lg:text-[1.4rem] ">
               i'm easily accessible and open to new opportunities,all you need
               is just click the button bellow or the socio-media icons at the
               left side of the page,perhaps you can also click on the email
@@ -401,7 +393,7 @@ const Home = () => {
               <GitHub className="socialMedias" />
             </a>
           </div>
-          <p className="copywrite text-center  mt-[5rem] lg:mt-[15rem]  font-serif  col-[gray] mb-[3rem]">
+          <p className="copywrite text-center  mt-[5rem] lg:mt-[15rem]  col-[gray] mb-[3rem]">
             Remixed and built by Abdulsamii Ajala,adopted by Abdulraheem Mikail
             k.
           </p>

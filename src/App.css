@@ -7,41 +7,46 @@
   display: none;
 }
 .App {
-  background-color: #0f0326;
-  color: #c785d8;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: cursive;
+
+  /* @apply; */
 }
 .main::-webkit-scrollbar {
   display: none;
 }
 
 .Link {
-  color: #ebcaf1;
   font-size: 1.2rem;
-  @apply my-[1rem] lg:my-[2rem] mx-[0.85rem]  ml-[30%]  lg:ml-0  md:ml-[40%];
+  @apply my-[1rem] lg:my-[2rem] mx-[0.85rem]  lg:ml-0 text-left md:ml-[40%];
 }
 .mikailPicture {
-  @apply w-[100%] mt-[20%] flex  flex-col justify-center items-center;
+  @apply w-[100%] lg:w-[80%] mt-[20%] flex  flex-col justify-center ml-[5%];
 }
 .mikailPicture p {
-  @apply border-[2px] border-[#c785d8]  ml-[13%] w-[77%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
+  @apply border-[2px] border-[white]  ml-[13%] w-[77%]  lg:w-[100%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
+}
+.mikailPicturelgscreen p {
+  @apply border-[2px] border-[#c785d8]  ml-[15%] w-[77%]  md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh] text-[transparent];
 }
 .mikailPicture img {
-  @apply lg:hidden rounded-[5px] w-[80%] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover top-[-234px] md:ml-[7%];
+  @apply rounded-[5px] w-[80%] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover top-[-234px] md:ml-[7%];
 }
+
 .LinkCollection {
-  @apply hidden lg:flex flex-row  justify-between w-[100%] bg-[#0f0326] z-[1] p-[1rem] fixed top-0;
+  background-color: #0a192f;
+  @apply hidden lg:flex flex-row  justify-between w-[100%] z-[2] p-[1rem] fixed top-0;
 }
 
 .Home_Aside {
-  @apply flex  flex-col lg:w-[65%] mt-[10%]  lg:mt-[10rem] lg:ml-[17%] bg-[#0f0326];
+  @apply flex  flex-col lg:w-[80%] mt-[10%]  lg:mt-[10rem] lg:ml-[8.7%];
 }
 .p {
   font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   font-style: italic;
-  line-height: 3rem;
-  margin: 50px 1rem;
+  line-height: 2.5rem;
 }
 .division {
   width: 100%;
@@ -51,7 +56,7 @@
 
 .media img,
 .boder {
-  @apply flex flex-col ml-8;
+  @apply flex flex-col;
 }
 
 .media img:hover {
@@ -83,8 +88,7 @@
 .author {
   width: 28rem;
   height: 45vh;
-  border: 5px double #c27ad4;
-  border-radius: 30px;
+  border-radius: 10px;
   image-rendering: smooth;
 }
 
@@ -98,6 +102,7 @@
 }
 
 .mikail:hover .mikail-inner {
+  box-shadow: 2px, 1px, 6px 2px white;
   transform: rotateY(180deg);
 }
 
@@ -125,28 +130,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #321f56;
+  background-color: transrant;
   line-height: 2rem;
   color: white;
   width: 18rem;
   height: 45vh;
-  border: 5px double #c27ad4;
-  border-radius: 30px;
+  border-radius: 5px;
   perspective: 1000px;
   transform: rotateY(180deg);
 }
 .italic {
   letter-spacing: 10px;
-  box-shadow: 4px 4px #c27ad4;
-  border-color: #8f58a2;
-  color: #c27ad4;
+  box-shadow: 4px 4px #ccd6f6;
+  border-color: transparent;
+  color: #ccd6f6;
 }
 .media {
   @apply hidden  lg:flex flex-col justify-center  lg:fixed;
 }
 .boder {
   border-left: 1px solid lightgray;
-  margin-left: 3rem;
   height: 10rem;
 }
 .line {
@@ -168,11 +171,10 @@
   }
 }
 .div div {
-  @apply gap-[1rem];
+  @apply gap-[0.5rem];
 }
 .you {
-  background-color: #321f56;
-  @apply w-[95%] lg:w-[100%] py-[1rem] lg:px-[3.5rem] relative z-[1] px-[1rem] lg:mt-[2rem] leading-[1.8rem] rounded-[5px];
+  @apply w-[100%] lg:w-[100%] py-[1rem] lg:px-[1.5rem] relative z-[1] px-[1rem] lg:mt-[2rem] leading-[1.8rem] rounded-[5px] text-[#0a192f] bg-[#ccd6f6];
 }
 .Engr p {
   line-height: 2rem;
@@ -227,14 +229,19 @@
   padding: 0.75rem;
   border-radius: 5px;
 }
+.getInt {
+  transition: 0.75s all ease-in-out;
+}
 .socialMedias {
   @apply w-[2rem] m-3 ml-[18%];
 }
 .projects {
-  @apply flex flex-col justify-center items-center lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 md:gap-2  gap-4;
+  @apply flex flex-col justify-center items-center lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 md:gap-[1rem]  gap-8;
 }
 .project {
-  background-color: #321f56;
+  box-shadow: 1px 1px 2px 1px black;
+  /* background-color: white; */
+  background-color: #0a192f;
   border-radius: 5px;
   @apply w-[90%] lg:w-[100%] h-[60vh];
 }
@@ -242,8 +249,4 @@
   cursor: pointer;
   transition: 1s ease-in-out;
   @apply scale-105;
-}
-.getInTouch:hover {
-  background-color: #f0c4f9;
-  color: #321f56;
 }

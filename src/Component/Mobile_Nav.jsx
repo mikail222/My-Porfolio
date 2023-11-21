@@ -7,11 +7,11 @@ const Mobile_Nav = () => {
   return (
     <div>
       {!show ? (
-        <div className="lg:hidden  flex flex-row justify-between items-center w-[100%] h-[12vh] px-[15px] bg-[#0f0326] fixed z-[2] overflow-hidden ">
+        <div className="lg:hidden  flex flex-row justify-between items-center w-[100%] h-[12vh] px-[15px] bg-[#0a192f] fixed z-[2] overflow-hidden ">
           <div className="devLogo">
             <Link className="flex flex-wrap  items-center" to="/">
               <p
-                className="font-serif italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg
+                className=" italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg
               :p-2  drop-shadow-md	"
               >
                 Mιƙαιʅ
@@ -22,10 +22,10 @@ const Mobile_Nav = () => {
         </div>
       ) : (
         <div className="lg:hidden z-[2] overflow-hidden">
-          <div className="fixed flex flex-row justify-between items-center w-[100vw] h-[12vh] px-[15px] bg-[#0f0326]  overflow-hidden z-[3]">
+          <div className="fixed flex flex-row justify-between items-center w-[100vw] h-[12vh] px-[15px] bg-[#0a192f]  overflow-hidden z-[3]">
             <div className="devLogo">
               <Link className="flex flex-wrap  items-center" to="/">
-                <p className="font-serif italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg:p-2  drop-shadow-lg	">
+                <p className=" italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg:p-2  drop-shadow-lg	">
                   Mιƙαιʅ
                 </p>
               </Link>
@@ -35,8 +35,8 @@ const Mobile_Nav = () => {
               onClick={() => setShow(false)}
             />
           </div>
-          <div className="lg:hidden flex  flex-col justify-center items-center bg-[#321f56] pt-[10%] w-[70%] md:w-[50%] h-[100vh] fixed z-[2]">
-            <div className="w-[100%] flex flex-col justify-center ">
+          <div className="lg:hidden flex  flex-col justify-center items-center bg-[#0a192f] pt-[10%] w-[70%] md:w-[50%] h-[100vh] fixed z-[2]">
+            <div className="w-[100%] flex flex-col justify-center items-center ">
               {" "}
               <a className="Link" href="#About">
                 About
@@ -51,8 +51,8 @@ const Mobile_Nav = () => {
                 Contact
               </a>{" "}
               <a
-                className="ml-[5%] w-[90%] text-center py-[10px] px-[15px] bg-[#0f0326]  rounded-[5px] mt-[30%]"
-                href="#"
+                className="ml-[5%] w-[60%] text-center py-[10px] px-[15px] border-[2px]  rounded-[5px] mt-[30%]"
+                href="#/"
               >
                 Resume
               </a>

@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="  LinkCollection   ">
       <div className="devLogo">
         <Link className="flex flex-wrap  items-center" to="/">
-          <p className="font-serif italic text-[2rem] border-[1px] p-2  drop-shadow-md	">
+          <p className=" italic text-[2rem] border-[1px] p-2  drop-shadow-md	">
             Mιƙαιʅ
           </p>
         </Link>
@@ -24,10 +24,7 @@ const Nav = () => {
         <a className="Link" href="#contact">
           Contact
         </a>{" "}
-        <a
-          className="Link border-[1px]  py-[5px] px-[15px] rounded-[10px]"
-          href="#"
-        >
+        <a className="Link border-[2px]  py-[5px] px-[15px]" href="#">
           Resume
         </a>
       </div>
