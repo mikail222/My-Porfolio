@@ -44,7 +44,7 @@
 .p {
   font-size: 2rem;
   font-weight: 200;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 2.5rem;
 }
 .division {
@@ -166,7 +166,7 @@
 }
 @media screen and (max-width: 992px) {
   .portfolio div {
-    @apply flex  flex-col justify-center items-center;
+    @apply flex  flex-col pl-[5px] w-[95%];
   }
 }
 .div div {

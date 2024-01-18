@@ -36,7 +36,7 @@ const Mobile_Nav = () => {
             />
           </div>
           <div className="lg:hidden flex  flex-col justify-center items-center bg-[#0a192f] pt-[10%] w-[70%] md:w-[50%] h-[100vh] fixed z-[2]">
-            <div className="w-[100%] flex flex-col justify-center items-center ">
+            <div className="w-[100%] flex flex-col justify-center  pl-[5%] ">
               {" "}
               <a className="Link" href="#About">
                 About

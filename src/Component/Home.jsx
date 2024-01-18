@@ -82,7 +82,7 @@ const Home = () => {
               technological advancement of this century
             </p>
             <a href="mailto:abdulraheemmukaila6@gmail.com">
-              <button className="getInt border-[1px] font-bold p-[3%] text-[1.3rem] outline-[transparent] hover:text-[#321f56] hover:bg-[#f0c4f9] rounded-[5px] lg:w-[40%]">
+              <button className="getInt border-[1px] p-[3%] text-[1.3rem] outline-[transparent] hover:text-[#321f56] hover:bg-[#f0c4f9] rounded-[5px] lg:w-[40%]">
                 Get in Touch
               </button>
             </a>
@@ -103,11 +103,13 @@ const Home = () => {
             <div className="lg:w-[100%] lg:text-[1.2rem]">
               <strong className="text-[1.4rem]">
                 <i> Mikail Abdulraheem</i>
-              </strong>{" "}
-              is the name, i'm a Front-end engineer i base in NIGERIA am a
-              passionate,flexible Enthusiastical lover of programmatic problem
-              solving in colaboration with some awesome Technological tools that
-              facilitate outstanding and Excellent user experience.
+              </strong>
+              <p>
+                is the name, i'm a Front-end engineer i base in NIGERIA am a
+                passionate,flexible Enthusiastical lover of programmatic problem
+                solving in colaboration with some awesome Technological tools
+                that facilitate outstanding and Excellent user experience.
+              </p>
               <br />
               <br />
               <p>
@@ -134,9 +136,9 @@ const Home = () => {
                 </p>
               </p>
               <br />
-              <i className="text-[1.3rem] ">
+              <p className="text-[1.3rem] ">
                 Few of My Technological tools are:
-              </i>
+              </p>
               <div className="flex  flex-col lg:flex-row gap-6 mt-10">
                 <div className="flex  flex-col gap-2">
                   {skill.splice(0, 4).map((s) => (
@@ -146,7 +148,7 @@ const Home = () => {
                         src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
                         alt="picture"
                       />{" "}
-                      <li>{s}</li>{" "}
+                      <p>{s}</p>{" "}
                     </ul>
                   ))}
                 </div>
@@ -158,7 +160,7 @@ const Home = () => {
                         src="https://iconarchive.com/download/i42585/oxygen-icons.org/oxygen/Actions-arrow-right-double.ico"
                         alt="picture"
                       />{" "}
-                      <li>{s}</li>{" "}
+                      <p>{s}</p>{" "}
                     </ul>
                   ))}
                 </div>
@@ -169,40 +171,17 @@ const Home = () => {
             <p>-</p>
             <img src={img} alt="author" />
           </div>
-          {/* <div className="mikail  lg:hidden  w-[40%]">
-            <div className="mikail-inner">
-              <div className="mikail-front">
-                <Link to="About">
-                  <img
-                    className="author  object-cover"
-                    src={img}
-                    alt="author"
-                  />
-                </Link>
-              </div>
-              <div className="mikail-back">
-                <h1>
-                  Mikail <br />
-                  Abdul-raheem
-                </h1>
-                <p className="text-[1.5rem]">Front-End Engineer</p>
-                <p>
-                  Flexible,
-                  <br />
-                  passionate
-                  <br />&
-                  <br />
-                  Enthusiastic Developer
-                </p>
-              </div>
-            </div>
-          </div> */}
         </section>
         <section
           id="services"
           className="w-[100vw] px-[10px] lg:w-[100%]  lg:mt-[10rem]  lg:px-0"
         >
-          <p className="text-[2rem] text-[#f0c4f9] flex flex-wrap">Sevices</p>
+          <div className="flex lg:flex-row w-[95%] lg:w-[100%]">
+            <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
+              Services{" "}
+            </p>
+            <p className="line"></p>
+          </div>
           <p className="w-[98%] lg:w-[80%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur aliquam ut maxime quam illum molestias ipsum, dolor,
@@ -221,7 +200,7 @@ const Home = () => {
             <p className="line"></p>
           </div>
 
-          <div className="div  mt-[2rem] ">
+          <div className="div  lg:mt-[2rem] ">
             <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
               <p>Featured Project</p>
               <p className="title ">Weather Tips</p>
@@ -243,7 +222,7 @@ const Home = () => {
 
             <img
               src={image2}
-              className="weather  w-[90%] lg:w-[50%]"
+              className="weather  w-[95%] lg:w-[50%]"
               alt="weather"
             />
           </div>
@@ -270,7 +249,7 @@ const Home = () => {
             </div>
             <img
               src={image3}
-              className="lg:hidden w-[90%] lg:w-[50%]"
+              className="lg:hidden w-[95%] lg:w-[50%]"
               alt="gitSearch"
             />
           </div>
@@ -295,7 +274,7 @@ const Home = () => {
               </p>
             </div>
 
-            <img src={image4} className="w-[90%] lg:w-[55%]" alt="product" />
+            <img src={image4} className="w-[95%] lg:w-[55%]" alt="product" />
           </div>
           <div className="div  mt-[7rem] ">
             <img
@@ -324,7 +303,7 @@ const Home = () => {
             </div>
             <img
               src={image5}
-              className="lg:hidden w-[90%] lg:w-[50%]"
+              className="lg:hidden w-[95%] lg:w-[50%]"
               alt="youtube"
             />
           </div>
