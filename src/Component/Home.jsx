@@ -308,7 +308,7 @@ const Home = () => {
             />
           </div>
         </section>
-        <section className="w-[95vw] lg:w-[100%] mt-[15rem]">
+        <section className="w-[95vw] lg:w-[100%]  mt-[5rem] lg:mt-[15rem]">
           <p
             id="store"
             className=" lg:w-auto lg:tracking-[3px] lg:text-[2.5rem] text-[#f0c4f9] text-center"
