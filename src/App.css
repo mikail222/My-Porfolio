@@ -39,7 +39,7 @@
 }
 
 .Home_Aside {
-  @apply flex  flex-col lg:w-[80%] mt-[10%]  lg:mt-[10rem] lg:ml-[8.7%];
+  @apply flex  flex-col lg:w-[75%] mt-[10%]  lg:mt-[10rem] lg:ml-[13%];
 }
 .p {
   font-size: 2rem;

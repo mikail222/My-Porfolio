@@ -315,7 +315,7 @@ const Home = () => {
           >
             Projects in view, cracking the Glass of Store{" "}
           </p>
-          <div className="w-[100vw] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem]">
+          <div className="w-[100vw] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem] lg:ml-[0px]">
             <div className="project">
               <GitHub />
               <p>
