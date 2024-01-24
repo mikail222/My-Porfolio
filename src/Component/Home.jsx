@@ -290,7 +290,7 @@ const Home = () => {
 
                   <img
                     src={image2}
-                    className="weather  w-[95%] lg:w-[50%]  h-[50vh]  rounded-[10px]"
+                    className="weather  w-[95%] lg:w-[50%]  rounded-[10px]"
                     alt="weather"
                   />
                 </div>
