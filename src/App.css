@@ -21,25 +21,25 @@
   @apply my-[1rem] lg:my-[2rem] mx-[0.85rem]  lg:ml-0 text-left md:ml-[40%];
 }
 .mikailPicture {
-  @apply w-[100%] lg:w-[80%] mt-[20%] flex  flex-col justify-center ml-[5%];
+  @apply w-[100%] mt-[20%] flex  flex-col justify-center;
 }
 .mikailPicture p {
-  @apply border-[2px] border-[white]  ml-[13%] w-[77%]  lg:w-[100%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
+  @apply border-[2px] border-[white] w-[100%]  lg:w-[100%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
 }
 .mikailPicturelgscreen p {
   @apply border-[2px] border-[#c785d8]  ml-[15%] w-[77%]  md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh] text-[transparent];
 }
 .mikailPicture img {
-  @apply rounded-[5px] w-[80%] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover top-[-234px] md:ml-[7%];
+  @apply rounded-[5px] lg:w-[60%] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover top-[-234px] md:ml-[7%];
 }
 
 .LinkCollection {
-  background-color: #0a192f;
+  background-color: rgba(0, 0, 0, 0.5);
   @apply hidden lg:flex flex-row  justify-between w-[100%] z-[2] p-[1rem] fixed top-0;
 }
 
 .Home_Aside {
-  @apply flex  flex-col lg:w-[75%] mt-[10%]  lg:mt-[10rem] lg:ml-[13%];
+  @apply flex  flex-col justify-center  items-center mt-[5%]  lg:mt-[10%];
 }
 .p {
   font-size: 2rem;
@@ -53,9 +53,8 @@
   background-color: pink;
 }
 
-.media img,
-.boder {
-  @apply flex flex-col;
+.Media a:hover {
+  @apply flex flex-col justify-center items-center w-[55px] h-[55px] rounded-[100px] scale-150;
 }
 
 .media img:hover {
@@ -69,9 +68,7 @@
     transform: rotateY(0deg);
   }
 }
-.borda {
-  border-left: 2px solid gray;
-}
+
 .hidden {
   display: none;
 }
@@ -82,13 +79,6 @@
   border: 1px solid white;
   color: white;
   width: 3rem;
-}
-
-.author {
-  width: 28rem;
-  height: 45vh;
-  border-radius: 10px;
-  image-rendering: smooth;
 }
 
 .mikail-inner {
@@ -144,13 +134,7 @@
   border-color: transparent;
   color: #ccd6f6;
 }
-.media {
-  @apply hidden  lg:flex flex-col justify-center  lg:fixed;
-}
-.boder {
-  border-left: 1px solid lightgray;
-  height: 10rem;
-}
+
 .line {
   border-top: 2px solid gray;
   @apply hidden lg:flex lg:w-[15rem] m-[15px];
@@ -166,7 +150,7 @@
 }
 @media screen and (max-width: 992px) {
   .portfolio div {
-    @apply flex  flex-col pl-[5px] w-[95%];
+    @apply flex  flex-col w-[100%];
   }
 }
 .div div {
@@ -232,20 +216,46 @@
   transition: 0.75s all ease-in-out;
 }
 .socialMedias {
-  @apply w-[2rem] m-3 ml-[18%];
+  @apply w-[2rem];
 }
 .projects {
-  @apply flex flex-col justify-center items-center lg:grid  lg:grid-cols-3 md:grid md:grid-cols-2 md:gap-[1rem]  gap-8;
+  @apply flex flex-col justify-center items-center lg:grid  lg:grid-cols-2 md:grid md:grid-cols-2 md:gap-[1rem]  gap-8;
+}
+.skills {
+  @apply flex flex-col justify-center items-center lg:grid  lg:grid-cols-5 md:grid md:grid-cols-2 md:gap-[1rem]  gap-8;
 }
 .project {
+  box-shadow: 1px 1px 2px 1px black;
+  background-color: #0a192f;
+  border-radius: 5px;
+  @apply w-[90%] lg:w-[100%] h-[50vh];
+}
+.skill {
   box-shadow: 1px 1px 2px 1px black;
   /* background-color: white; */
   background-color: #0a192f;
   border-radius: 5px;
-  @apply w-[90%] lg:w-[100%] h-[60vh];
+  @apply w-[90%] flex  flex-row justify-around items-center p-[5%];
 }
-.project:hover {
+.project:hover,
+.skill:hover {
   cursor: pointer;
   transition: 1s ease-in-out;
   @apply scale-105;
+}
+.bgProfile {
+  background-image: url("./assets/online-school-equipment-home.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.projectBg {
+  background-image: url("./assets/react.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
 }
