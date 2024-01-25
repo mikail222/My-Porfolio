@@ -1,13 +1,14 @@
 import React from "react";
 import img from "../assets/mikail.png";
 import imgs from "../assets/react.svg";
-import image2 from "../assets/Screenshot from 2022-10-11 16-56-30.png";
+import image2 from "../assets/Screenshot from 2024-01-25 10-49-17.png";
 import figma from "../assets/figma_5968705.png";
 import firebase from "../assets/firebase_google_icon.png";
 import MongoDb from "../assets/mongodb_original_logo_icon_146424.png";
 import Github from "../assets/github_1051326.png";
-
-import image3 from "../assets/Screenshot from 2022-10-11 17-02-13.png";
+import image3 from "../assets/irehv.png";
+import image__3 from "../assets/Screenshot from 2022-10-11 17-02-13.png";
+import image_3 from "../assets/Screenshot from 2022-10-11 16-56-30.png";
 import image4 from "../assets/Screenshot from 2022-10-11 17-27-10.png";
 import image5 from "../assets/Screenshot from 2022-10-11 17-35-57.png";
 import image6 from "../assets/favpng_redux-react-javascript-angular-cascading-style-sheets.png";
@@ -26,7 +27,6 @@ import {
   Google,
   LinkedIn,
   Twitter,
-  ViewAgenda,
 } from "@mui/icons-material";
 import Slider from "react-slick";
 import { useEffect } from "react";
@@ -88,23 +88,6 @@ const Home = () => {
   };
   return (
     <div>
-      {/* <div className="w-[100%] my-[10%] flex flex-col justify-center items-center">
-        <div className="w-[95%] bg-white">
-          <Slider {...settings}>
-            {skill.map(({ name }, i) => (
-              <div key={i} className=" flex flex-col">
-                 <img
-                      src={imge}
-                      alt=""
-                      className="w-[100%] h-[65vh] bg-[orange] object-cover"
-                    /> 
-                <h2 className="lg:text-[2.5rem]  leading-10">{name}</h2>
-                <h4 className="text-[gray]  text-[1.5rem]"></h4>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div> */}
       <div className="w-[100%] h-[100vh] bgProfile">
         <div className="overlay w-[100%] h-[100%] flex flex-col justify-center items-center">
           {" "}
@@ -256,26 +239,29 @@ const Home = () => {
           <section className="portfolio  w-[100%] lg:w-[100%] mt-[10rem]">
             <div
               id="portfolio"
-              className="lg:px-[10%] flex lg:flex-row w-[95%] lg:w-[100%]"
+              className="lg:px-[10%] flex lg:flex-col w-[95%] lg:w-[100%]"
             >
-              <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
-                Portfolio{" "}
+              <div className=" flex lg:flex-row">
+                <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
+                  Portfolio{" "}
+                </p>
+                <p className="line"></p>
+              </div>
+              <p className="lg:text-[2.5rem] text-left  my-[5%]">
+                Check my creative Projects
               </p>
-              <p className="line"></p>
             </div>
-            <p className="lg:text-[2.5rem] text-left  my-[5%]">
-              Check my creative Projects
-            </p>{" "}
             <div className="projectBg w-[100%] h-[100%] ">
               <div className="overlay w-[100%] h-[100%] flex flex-col justify-center items-center px-[5%] lg:p-[10%]">
                 <div className="div  lg:mt-[2rem] ">
                   <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
                     <p>Featured Project</p>
-                    <p className="title ">Weather Tips</p>
+                    <p className="title ">DARUN-NUR</p>
                     <p className="you lg:mr-[-45]">
-                      <strong> Weather Tips</strong>: is an Educative App,
-                      design and program to supply security relating weather
-                      event like: Tornado,flood and other
+                      <strong> Darun-Nur</strong>: is a Travels and Tour
+                      website,that render official service to it client needlss
+                      of visiting the office for registration,documentation or
+                      complain.
                     </p>
                     <p
                       className="flex  flex-row gap-4  lg:gap-8 
@@ -284,35 +270,37 @@ const Home = () => {
                       <p>JavaScript</p>
                       <p>Tailwind</p>
                       <p>React</p>
-                      <p>css</p>
+                      <p>Firebase</p>
                     </p>
                   </div>
 
                   <img
                     src={image2}
-                    className="weather  w-[95%] lg:w-[50%]  rounded-[10px]"
+                    className=" h-[55vh] w-[95%] lg:w-[56%] rounded-[10px]"
                     alt="weather"
                   />
                 </div>
                 <div className="div mt-[7rem] ">
-                  <img
-                    src={image3}
-                    className="hidden rounded-[10px]  lg:flex w-[90%] lg:w-[50%]"
-                    alt="gitSearch"
-                  />
-                  <div className="lg:z-[1] lg:relative lg:right-[2rem] flex flex-col justify-end items-end">
+                  <div className="overlayProject z-[1]">
+                    <img
+                      src={image3}
+                      className="hidden rounded-[10px]  lg:flex  h-[55vh] w-[95%] lg:w-[100%]  "
+                      alt="gitSearch"
+                    />
+                  </div>
+                  <div className="lg:z-[2] lg:relative lg:right-[2rem] flex flex-col justify-end items-end">
                     <p>Featured Project</p>
-                    <p className="title">Git Search</p>
+                    <p className="title">IREHV</p>
                     <p className="you">
-                      <strong>Git Search</strong>: make available to users the
-                      comfort of locating a particular Github user at a very
-                      stressfree maximun rate
+                      <strong>Irehv</strong>: is a full official website for
+                      Pest control service rendering as well as cleaning service
+                      to it client.
                     </p>
-                    <p className="flex  flex-row gap-[1rem] lg:gap-6 mt-6  text-[1.2rem]">
+                    <p className="flex  flex-row gap-[.6rem] lg:gap-6 mt-6  text-[1.2rem]">
                       <p>JavaScript</p>
                       <p>Tailwind</p>
                       <p>React</p>
-                      <p>css</p>
+                      <p>Firebase</p>
                     </p>
                   </div>
                   <img
@@ -387,11 +375,11 @@ const Home = () => {
               id="store"
               className=" lg:w-auto lg:tracking-[3px] lg:text-[2.5rem] text-[#f0c4f9] text-center"
             >
-              Projects in view, cracking the Glass of Store{" "}
+              My Beginner child play Projects
             </p>
             <div className="w-[100vw] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem] lg:ml-[0px]">
-              <img src={image2} alt="" className="project" />
-              <img src={image3} alt="" className="project" />{" "}
+              <img src={image_3} alt="" className="project" />
+              <img src={image__3} alt="" className="project" />{" "}
               <img src={image4} alt="" className="project" />{" "}
               <img src={image5} alt="" className="project" />
             </div>
