@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/mikail.png";
 import imgs from "../assets/react.svg";
+import linked from "../assets/link.png";
 import image2 from "../assets/Screenshot from 2024-01-25 10-49-17.png";
 import figma from "../assets/figma_5968705.png";
 import firebase from "../assets/firebase_google_icon.png";
@@ -22,9 +23,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {
   Email,
+  ExitToApp,
+  ExitToAppSharp,
+  ExitToAppTwoTone,
   FacebookOutlined,
   GitHub,
   Google,
+  Link,
+  LinkOutlined,
   LinkedIn,
   Twitter,
 } from "@mui/icons-material";
@@ -272,6 +278,9 @@ const Home = () => {
                       <p>React</p>
                       <p>Firebase</p>
                     </p>
+                    <a href="https://darun-nur.netlify.app">
+                      <ExitToAppTwoTone className="" />
+                    </a>
                   </div>
 
                   <img
@@ -302,6 +311,9 @@ const Home = () => {
                       <p>React</p>
                       <p>Firebase</p>
                     </p>
+                    <a href="https://irehvs.netlify.app">
+                      <ExitToAppTwoTone className="" />
+                    </a>
                   </div>
                   <img
                     src={image3}
