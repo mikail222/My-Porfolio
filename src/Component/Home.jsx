@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/mikail.png";
+import img from "../assets/20231216_135543.jpg";
 import imgs from "../assets/react.svg";
 import linked from "../assets/link.png";
 import image2 from "../assets/Screenshot from 2024-01-25 10-49-17.png";
@@ -99,10 +99,13 @@ const Home = () => {
           {" "}
           <div
             id="Home"
-            className="p mx-[10px] flex  flex-col justify-center items-center"
+            className="p mx-[10px] flex  flex-col justify-center items-center pt-[5%]"
           >
             <p data-aos="slide-left">Hi, I'm</p>
-            <p data-aos="slide-right" className="lg:text-[5.5rem] my-[1rem]">
+            <p
+              data-aos="slide-right"
+              className="lg:text-[5.5rem] my-[5%]  lg:my-[1.5rem] font-[Britney]"
+            >
               Abdul-raheem Mikail
             </p>
             <p
@@ -112,7 +115,7 @@ const Home = () => {
               I create overwhelming Front-End best Users Experience
             </p>
           </div>{" "}
-          <aside className="Media my-[5%] lg:flex lg:flex-row justify-center items-center lg:w-[10%] gap-[10%] w-[50%] h-[2rem]">
+          <aside className="Media my-[5%] flex flex-row justify-center items-center lg:w-[10%]  gap-[5%] lg:gap-[10%] w-[100%] h-[2rem]">
             <a
               data-aos="fade-up-left"
               href="http://web.facebook.com/?_rdc=1&_rdr"
@@ -217,7 +220,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section className="lg:px-[10%]  w-[100vw] px-[10px] lg:w-[100%]">
+          <section className="px-[10%]  w-[100vw] lg:w-[100%]">
             <div id="services" className="flex lg:flex-row w-[95%] lg:w-[100%]">
               <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
                 Skills{" "}
@@ -245,7 +248,7 @@ const Home = () => {
           <section className="portfolio  w-[100%] lg:w-[100%] mt-[10rem]">
             <div
               id="portfolio"
-              className="lg:px-[10%] flex lg:flex-col w-[95%] lg:w-[100%]"
+              className="px-[10%] flex lg:flex-col w-[95%] lg:w-[100%]"
             >
               <div className=" flex lg:flex-row">
                 <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
@@ -285,7 +288,7 @@ const Home = () => {
 
                   <img
                     src={image2}
-                    className=" h-[55vh] w-[95%] lg:w-[56%] rounded-[10px]"
+                    className=" h-[55vh] w-[95%] lg:w-[56%] rounded-[10px]  object-cover"
                     alt="weather"
                   />
                 </div>
@@ -293,7 +296,7 @@ const Home = () => {
                   <div className="overlayProject z-[1]">
                     <img
                       src={image3}
-                      className="hidden rounded-[10px]  lg:flex  h-[55vh] w-[95%] lg:w-[100%]  "
+                      className="hidden rounded-[10px]  lg:flex  h-[55vh] object-cover  w-[95%] lg:w-[100%]  "
                       alt="gitSearch"
                     />
                   </div>
@@ -317,7 +320,7 @@ const Home = () => {
                   </div>
                   <img
                     src={image3}
-                    className="rounded-[10px] lg:hidden w-[95%] lg:w-[50%]"
+                    className="rounded-[10px] lg:hidden w-[95%] h-[55vh] object-cover "
                     alt="gitSearch"
                   />
                 </div>
@@ -389,7 +392,7 @@ const Home = () => {
             >
               My Beginner child play Projects
             </p>
-            <div className="w-[100vw] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem] lg:ml-[0px]">
+            <div className="w-[100%] md:w-[100%] md:pl-[5%] lg:w-[100%] projects mt-[2rem] lg:ml-[0px]">
               <img src={image_3} alt="" className="project" />
               <img src={image__3} alt="" className="project" />{" "}
               <img src={image4} alt="" className="project" />{" "}

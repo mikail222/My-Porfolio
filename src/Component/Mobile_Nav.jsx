@@ -11,10 +11,10 @@ const Mobile_Nav = () => {
           <div className="devLogo">
             <Link className="flex flex-wrap  items-center" to="/">
               <p
-                className=" italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg
-              :p-2  drop-shadow-md	"
+                className=" text-[1.5rem] lg:text-[2rem] p-1 lg
+              :p-2  font-[Britney]"
               >
-                Mιƙαιʅ
+                Mikail
               </p>
             </Link>
           </div>
@@ -25,8 +25,8 @@ const Mobile_Nav = () => {
           <div className="fixed flex flex-row justify-between items-center w-[100vw] h-[12vh] px-[15px] bg-[#0a192f]  overflow-hidden z-[3]">
             <div className="devLogo">
               <Link className="flex flex-wrap  items-center" to="/">
-                <p className=" italic text-[1.5rem] lg:text-[2rem] border-[1px] p-1 lg:p-2  drop-shadow-lg	">
-                  Mιƙαιʅ
+                <p className="text-[1.5rem] lg:text-[2rem] p-1 lg:p-2 font-[Britney]">
+                  Mikail
                 </p>
               </Link>
             </div>

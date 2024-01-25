@@ -94,40 +94,6 @@
   box-shadow: 2px, 1px, 6px 2px white;
   transform: rotateY(180deg);
 }
-
-.mikail-front,
-.mikail-back {
-  position: absolute;
-  width: 35rem;
-  height: 70vh;
-  margin-left: 4rem;
-  perspective: 100px;
-  backface-visibility: hidden;
-}
-
-.mikail-front {
-  background-color: #321f56;
-  width: 18rem;
-  height: 45vh;
-  border-radius: 30px;
-  perspective: 1000px;
-  color: black;
-}
-
-.mikail-back {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transrant;
-  line-height: 2rem;
-  color: white;
-  width: 18rem;
-  height: 45vh;
-  border-radius: 5px;
-  perspective: 1000px;
-  transform: rotateY(180deg);
-}
 .italic {
   letter-spacing: 10px;
   box-shadow: 4px 4px #ccd6f6;
