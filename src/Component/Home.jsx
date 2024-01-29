@@ -1,7 +1,6 @@
 import React from "react";
 import img from "../assets/20231216_135543.jpg";
 import imgs from "../assets/react.svg";
-import linked from "../assets/link.png";
 import image2 from "../assets/Screenshot from 2024-01-25 10-49-17.png";
 import figma from "../assets/figma_5968705.png";
 import firebase from "../assets/firebase_google_icon.png";
@@ -10,7 +9,7 @@ import Github from "../assets/github_1051326.png";
 import image3 from "../assets/irehv.png";
 import image__3 from "../assets/Screenshot from 2022-10-11 17-02-13.png";
 import image_3 from "../assets/Screenshot from 2022-10-11 16-56-30.png";
-import image4 from "../assets/Screenshot from 2022-10-11 17-27-10.png";
+import image4 from "../assets/Screenshot from 2024-01-29 17-56-36.png";
 import image5 from "../assets/Screenshot from 2022-10-11 17-35-57.png";
 import image6 from "../assets/favpng_redux-react-javascript-angular-cascading-style-sheets.png";
 import image7 from "../assets/kindpng_678384.png";
@@ -325,11 +324,12 @@ const Home = () => {
                 <div className="mt-[7rem] div">
                   <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
                     <p>Featured Project</p>
-                    <p className="title">M&K Venture</p>
+                    <p className="title">GIT QUICK SEARCH</p>
                     <p className="you">
                       <strong>
-                        M&K: is a guarantee and an expert platform for sale and
-                        distribution of quality Items of different kind
+                        Git Quick Search: is a search app that provide basic
+                        information and link to users, about people they are
+                        willing to link up on github
                       </strong>
                     </p>
                     <p
@@ -341,6 +341,9 @@ const Home = () => {
                       <p>React</p>
                       <p>css</p>
                     </p>
+                    <a href="https://meet-git-user.netlify.app">
+                      <ExitToAppTwoTone className="" />
+                    </a>
                   </div>
 
                   <img
