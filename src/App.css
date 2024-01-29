@@ -112,7 +112,7 @@
   @apply flex  flex-col justify-center  items-center;
 }
 .portfolio .div {
-  @apply w-[98%]  flex  lg:flex-row;
+  @apply w-[100%]  flex  lg:flex-row;
 }
 @media screen and (max-width: 992px) {
   .portfolio div {
@@ -194,14 +194,13 @@
   box-shadow: 1px 1px 2px 1px black;
   background-color: #0a192f;
   border-radius: 5px;
-  @apply w-[90%] lg:w-[100%] h-[50vh] object-cover;
+  @apply w-[90%] lg:w-[100%] h-[40vh] lg:h-[50vh] object-cover;
 }
 .skill {
   box-shadow: 1px 1px 2px 1px black;
-  /* background-color: white; */
   background-color: #0a192f;
   border-radius: 5px;
-  @apply w-[90%] flex  flex-row justify-around items-center p-[5%];
+  @apply w-[100%] flex  flex-row justify-around items-center p-[5%];
 }
 .project:hover,
 .skill:hover {
@@ -214,6 +213,7 @@
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .projectBg {
   background-image: url("./assets/react.svg");
@@ -224,7 +224,7 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .overlayProject:hover {
   background-color: rgba(0, 0, 0, 0.8);

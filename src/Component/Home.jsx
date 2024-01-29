@@ -158,7 +158,7 @@ const Home = () => {
       <div className=" Homepage flex flex-col lg:flex-col  ">
         <aside className="Home_Aside">
           <div className="w-[100%] flex flex-col  lg:justify-center items-center font-thin">
-            <div className="lg:px-[5%] Engr w-[95%] ml-4 flex flex-col  lg:justify-center items-center">
+            <div className="px-[5%] Engr w-[95%] flex flex-col  lg:justify-center items-center">
               <p className=" text-left lg:text-[1.3rem] mb-[6%] lg:text-center">
                 Hello there! Thank you for having me on your page. It sounds
                 like you have a great interest in web and application
@@ -174,7 +174,7 @@ const Home = () => {
                 href="mailto:abdulraheemmukaila6@gmail.com"
                 className="w-[100%] flex flex-col justify-center items-center"
               >
-                <button className="getInt border-[1px] p-[3%] text-[1.3rem] outline-[transparent] hover:text-[#0a192f] hover:bg-[#ccd6f6] rounded-[5px] lg:w-[50%]">
+                <button className="getInt border-[1px] p-[3%] text-[1.3rem] outline-[transparent] hover:text-[#0a192f] hover:bg-[#ccd6f6] rounded-[5px] w-[100%] lg:w-[50%]">
                   Get in Touch
                 </button>
               </a>
@@ -184,7 +184,6 @@ const Home = () => {
             className="w-[98vw] flex flex-col lg:flex-row lg:w-[100%]  justify-center items-center mt-[5rem] lg:mt-[5%]  px-[10%]"
             id="About"
           >
-            {" "}
             <div>
               <div className="flex flex-row justify-start items-center">
                 <p className=" my-4 text-[1.5rem] lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
@@ -202,7 +201,6 @@ const Home = () => {
                   individuals who share the same enthusiasm for programming and
                   technology.
                 </p>
-                <br />
                 <br />
                 <p>
                   i've over 3 years experience working around Web and
@@ -245,23 +243,23 @@ const Home = () => {
               ))}
             </div>
           </section>
-          <section className="portfolio  w-[100%] lg:w-[100%] mt-[10rem]">
+          <section className="portfolio w-[100%] mt-[10rem]">
             <div
               id="portfolio"
-              className="px-[10%] flex lg:flex-col w-[95%] lg:w-[100%]"
+              className="px-[10%] flex lg:flex-col w-[100%] lg:w-[100%]"
             >
               <div className=" flex lg:flex-row">
                 <p className="lg:text-[2rem] text-[#f0c4f9] flex flex-wrap">
-                  Portfolio{" "}
+                  Portfolio
                 </p>
                 <p className="line"></p>
               </div>
-              <p className="lg:text-[2.5rem] text-left  my-[5%]">
+              <p className="lg:text-[2.5rem] my-[5%]">
                 Check my creative Projects
               </p>
             </div>
             <div className="projectBg w-[100%] h-[100%] ">
-              <div className="overlay w-[100%] h-[100%] flex flex-col justify-center items-center px-[5%] lg:p-[10%]">
+              <div className="overlay w-[100%] h-[100%] flex flex-col justify-center items-center p-[5%] lg:p-[10%]">
                 <div className="div  lg:mt-[2rem] ">
                   <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
                     <p>Featured Project</p>
@@ -288,7 +286,7 @@ const Home = () => {
 
                   <img
                     src={image2}
-                    className=" h-[55vh] w-[95%] lg:w-[56%] rounded-[10px]  object-cover"
+                    className=" lg:h-[55vh] w-[100%] lg:w-[56%] rounded-[10px] h-[40vh] object-cover"
                     alt="weather"
                   />
                 </div>
@@ -296,7 +294,7 @@ const Home = () => {
                   <div className="overlayProject z-[1]">
                     <img
                       src={image3}
-                      className="hidden rounded-[10px]  lg:flex  h-[55vh] object-cover  w-[95%] lg:w-[100%]  "
+                      className="hidden rounded-[10px]  lg:flex h-[40vh] lg:h-[55vh] object-cover  w-[100%]  "
                       alt="gitSearch"
                     />
                   </div>
@@ -320,7 +318,7 @@ const Home = () => {
                   </div>
                   <img
                     src={image3}
-                    className="rounded-[10px] lg:hidden w-[95%] h-[55vh] object-cover "
+                    className="rounded-[10px] lg:hidden w-[100%] lg:h-[55vh] h-[40vh] object-cover "
                     alt="gitSearch"
                   />
                 </div>
@@ -347,14 +345,14 @@ const Home = () => {
 
                   <img
                     src={image4}
-                    className="w-[95%] rounded-[10px] lg:w-[55%]"
+                    className="w-[100%] h-[40vh]  lg:h-[55vh] rounded-[10px] lg:w-[55%]"
                     alt="product"
                   />
                 </div>
                 <div className="div  mt-[7rem] ">
                   <img
                     src={image5}
-                    className="hidden rounded-[10px] lg:flex w-[90%] lg:w-[50%]"
+                    className="hidden rounded-[10px] lg:flex w-[100%] lg:w-[50%]"
                     alt="youtube"
                   />
                   <div className="mt-[1rem] lg:z-[1] lg:relative lg:right-[2rem] flex flex-col justify-end  items-end">
@@ -378,7 +376,7 @@ const Home = () => {
                   </div>
                   <img
                     src={image5}
-                    className="lg:hidden w-[95%] lg:w-[50%]"
+                    className="lg:hidden  h-[40vh] lg:h-[55vh] w-[100%] lg:w-[50%]"
                     alt="youtube"
                   />
                 </div>
@@ -407,11 +405,11 @@ const Home = () => {
               <p className="text-[2.3rem] text-[#f0c4f9] mt-[1.3rem]">
                 Get In Touch
               </p>
-              <p className="w-[90%] lg:w-auto  lg:leading-[1.7rem] lg:m-[3rem] text-center  lg:text-[1.4rem] ">
+              <p className="w-[90%] lg:w-[65%]  lg:leading-[1.7rem] lg:m-[3rem] text-center  lg:text-[1.4rem] ">
                 i'm easily accessible and open to new opportunities,all you need
-                is just click the button bellow or the socio-media icons at the
-                left side of the page,perhaps you can also click on the email
-                address at right side of the page.
+                is just click on the socio-media icons at the left side of the
+                page,perhaps you can also click on the email address at right
+                side of the page.
               </p>
               <a href="mailto:abdulraheemmukaila6@gmail.com" target="_blank">
                 <button className=" text-[#f0c4f9]  text-[1.2rem]">
@@ -447,26 +445,6 @@ const Home = () => {
             </p>
           </section>
         </aside>
-        {/* <aside className="md:hidden lg:flex emailside">
-          <div className="frameworks">
-            <img className="react" src={imgs} alt="react" />
-            <img src={image6} alt="" />
-            <img src={image7} alt="" />
-            <img src={image8} alt="" />
-            <img src={image9} alt="" />
-            <img src={image10} alt="" />
-          </div>
-          <a
-            className="aTransform flex flex-col justify-center items-center "
-            href="mailto:abdulraheemmukaila6@gmail.com"
-            target="_blank"
-          >
-            <p className="transformText mt-[8rem]">
-              <em>abdulraheemmukaila6@gmail.com</em>
-            </p>
-            <p className="pillar mt-[7.25rem] "></p>
-          </a>
-        </aside> */}
       </div>
     </div>
   );
