@@ -22,7 +22,10 @@ const Nav = () => {
         <a className="Link" href="#contact">
           Contact
         </a>{" "}
-        <a className="Link border-[2px]  py-[5px] px-[15px]" href="#">
+        <a
+          className="Link border-[2px]  py-[5px] px-[15px]"
+          href="https://flowcv.com/resume/02gb58s3t3"
+        >
           Resume
         </a>
       </div>

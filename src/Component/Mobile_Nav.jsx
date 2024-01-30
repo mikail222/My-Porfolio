@@ -52,7 +52,7 @@ const Mobile_Nav = () => {
               </a>{" "}
               <a
                 className="ml-[5%] w-[60%] text-center py-[10px] px-[15px] border-[2px]  rounded-[5px] mt-[30%]"
-                href="#/"
+                href="https://flowcv.com/resume/02gb58s3t3"
               >
                 Resume
               </a>
