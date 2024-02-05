@@ -211,8 +211,8 @@ const Home = () => {
                 <p className="text-[1.3rem] "></p>
               </div>
             </div>
-            <div className="mikailPicture hidden md:flex lg:flex">
-              <p>-</p>
+            <div className="mikailPicture ">
+              <p className="hidden md:flex lg:flex">-</p>
               <img src={img} alt="author" />
             </div>
           </section>
