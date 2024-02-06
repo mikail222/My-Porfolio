@@ -7,7 +7,7 @@ const Mobile_Nav = () => {
   return (
     <div>
       {!show ? (
-        <div className="lg:hidden  flex flex-row justify-between items-center w-[100%] h-[12vh] px-[15px] bg-[#0a192f] fixed z-[2] overflow-hidden ">
+        <div className="lg:hidden  flex flex-row justify-between items-center w-[100%] h-[10vh] px-[15px] fixed z-[2] overflow-hidden ">
           <div className="devLogo">
             <Link className="flex flex-wrap  items-center" to="/">
               <p
@@ -18,11 +18,14 @@ const Mobile_Nav = () => {
               </p>
             </Link>
           </div>
-          <MenuOutlined onClick={() => setShow(true)} />
+          <MenuOutlined
+            className="w-[40px] h-[40px]"
+            onClick={() => setShow(true)}
+          />
         </div>
       ) : (
         <div className="lg:hidden z-[2] overflow-hidden">
-          <div className="fixed flex flex-row justify-between items-center w-[100vw] h-[12vh] px-[15px] bg-[#0a192f]  overflow-hidden z-[3]">
+          <div className="fixed flex flex-row justify-between items-center w-[100vw] h-[10vh] px-[15px]  overflow-hidden z-[3]">
             <div className="devLogo">
               <Link className="flex flex-wrap  items-center" to="/">
                 <p className="text-[1.5rem] lg:text-[2rem] p-1 lg:p-2 font-[Britney]">
