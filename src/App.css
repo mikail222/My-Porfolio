@@ -22,7 +22,7 @@
   @apply my-[1rem] lg:my-[2rem] mx-[0.85rem]  lg:ml-0 text-left md:ml-[40%];
 }
 .mikailPicture {
-  @apply w-[100%] mt-[20%] flex  flex-col justify-center;
+  @apply w-[100%] lg:mt-[20%] flex  flex-col justify-center;
 }
 .mikailPicture p {
   @apply border-[2px] border-[white] w-[100%]  lg:w-[100%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
@@ -31,7 +31,7 @@
   @apply border-[2px] border-[#c785d8]  ml-[15%] w-[77%]  md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh] text-[transparent];
 }
 .mikailPicture img {
-  @apply rounded-[5px] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover top-[-234px] md:ml-[7%];
+  @apply rounded-[5px] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover lg:top-[-254px] md:ml-[7%] mb-[15%] lg:mb-[1%];
 }
 
 .LinkCollection {

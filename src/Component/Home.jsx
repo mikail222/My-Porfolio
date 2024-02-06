@@ -10,7 +10,7 @@ import image3 from "../assets/irehv.png";
 import image__3 from "../assets/Screenshot from 2022-10-11 17-02-13.png";
 import image_3 from "../assets/Screenshot from 2022-10-11 16-56-30.png";
 import image4 from "../assets/Screenshot from 2024-01-29 17-56-36.png";
-import image5 from "../assets/Screenshot from 2022-10-11 17-35-57.png";
+import image5 from "../assets/Screenshot from 2024-02-06 13-53-14.png";
 import image6 from "../assets/favpng_redux-react-javascript-angular-cascading-style-sheets.png";
 import image7 from "../assets/kindpng_678384.png";
 import image8 from "../assets/tailwind-css-seeklogo.com.svg";
@@ -376,6 +376,9 @@ const Home = () => {
                       <p>Redux</p>
                       <p>TMDB</p>
                     </p>
+                    <a href="https://youtube-r.netlify.app">
+                      <ExitToAppTwoTone className="" />
+                    </a>
                   </div>
                   <img
                     src={image5}
