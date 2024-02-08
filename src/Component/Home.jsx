@@ -21,6 +21,8 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
+  Code,
+  CodeSharp,
   Email,
   ExitToApp,
   ExitToAppSharp,
@@ -35,6 +37,7 @@ import {
 } from "@mui/icons-material";
 import Slider from "react-slick";
 import { useEffect } from "react";
+import Testimony from "./Testimony";
 
 const Home = () => {
   useEffect(() => {
@@ -93,7 +96,7 @@ const Home = () => {
   };
   return (
     <div>
-      <div className="w-[100%] h-[100vh] bgProfile">
+      <div className="w-[100%]  h-[65vh] lg:h-[100vh] bgProfile">
         <div className="overlay w-[100%] h-[100%] flex flex-col justify-center items-center">
           {" "}
           <div
@@ -180,7 +183,7 @@ const Home = () => {
             </div>
           </div>
           <section
-            className="w-[98vw] flex flex-col lg:flex-row lg:w-[100%]  justify-center items-center mt-[5rem] lg:mt-[5%]  px-[10%]"
+            className="w-[98vw] flex flex-col md:flex-row lg:flex-row lg:w-[100%] md:w-[100%]  justify-center items-center mt-[5rem] lg:mt-[5%]  px-[10%] lg:px-[10%] md:px-[5%]"
             id="About"
           >
             <div>
@@ -190,7 +193,7 @@ const Home = () => {
                 </p>
                 <p className="line"></p>
               </div>
-              <div className="lg:w-[80%] lg:text-[1.2rem]">
+              <div className="lg:w-[80%] md:w-[85%]  lg:text-[1.2rem]">
                 <p>
                   Hi there! My name is Mikail Abdulraheem. I work as a front-end
                   engineer and I am based in Nigeria. I am passionate and
@@ -263,12 +266,14 @@ const Home = () => {
                   <div className="lg:z-[1] lg:relative lg:left-[2rem] flex flex-col justify-start items-start">
                     <p>Featured Project</p>
                     <p className="title ">DARUN-NUR</p>
-                    <p className="you lg:mr-[-45]">
-                      <strong> Darun-Nur</strong>: is a Travels and Tour
-                      website,that render official service to it client needlss
-                      of visiting the office for registration,documentation or
-                      complain.
-                    </p>
+                    <a href="http://darun-nur.netlify.app">
+                      <p className="you lg:mr-[-45px] md:mr-[-45px]">
+                        <strong> Darun-Nur</strong>: is a Travels and Tour
+                        website,that render official service to it client
+                        needlss of visiting the office for
+                        registration,documentation or complain.
+                      </p>
+                    </a>
                     <p
                       className="flex  flex-row gap-4  lg:gap-8 
                mt-6  lg:text-[1.2rem]"
@@ -278,8 +283,9 @@ const Home = () => {
                       <p>React</p>
                       <p>Firebase</p>
                     </p>
-                    <a href="https://darun-nur.netlify.app">
-                      <ExitToAppTwoTone className="" />
+
+                    <a href="https://github.com/mikail222/Darun_nur">
+                      <CodeSharp className="" />
                     </a>
                   </div>
 
@@ -300,19 +306,21 @@ const Home = () => {
                   <div className="lg:z-[2] lg:relative lg:right-[2rem] flex flex-col justify-end items-end">
                     <p>Featured Project</p>
                     <p className="title">IREHV</p>
-                    <p className="you">
-                      <strong>Irehv</strong>: is a full official website for
-                      Pest control service rendering as well as cleaning service
-                      to it client.
-                    </p>
+                    <a href="http://irehvs.netlify.app">
+                      <p className="you">
+                        <strong>Irehv</strong>: is a full official website for
+                        Pest control service rendering as well as cleaning
+                        service to it client.
+                      </p>
+                    </a>
                     <p className="flex  flex-row gap-[.6rem] lg:gap-6 mt-6  text-[1.2rem]">
                       <p>JavaScript</p>
                       <p>Tailwind</p>
                       <p>React</p>
                       <p>Firebase</p>
                     </p>
-                    <a href="https://irehvs.netlify.app">
-                      <ExitToAppTwoTone className="" />
+                    <a href="https://github.com/mikail222/IN-AMURAHMAN_WEBSITE">
+                      <CodeSharp className="" />
                     </a>
                   </div>
                   <img
@@ -326,11 +334,13 @@ const Home = () => {
                     <p>Featured Project</p>
                     <p className="title">GIT QUICK SEARCH</p>
                     <p className="you">
-                      <strong>
-                        Git Quick Search: is a search app that provide basic
-                        information and link to users, about people they are
-                        willing to link up on github
-                      </strong>
+                      <a href="http://meet-git-user.netlify.app">
+                        <strong>
+                          Git Quick Search: is a search app that provide basic
+                          information and link to users, about people they are
+                          willing to link up on github
+                        </strong>
+                      </a>
                     </p>
                     <p
                       className="flex  flex-row gap-[1rem] lg:gap-8
@@ -341,8 +351,8 @@ const Home = () => {
                       <p>React</p>
                       <p>css</p>
                     </p>
-                    <a href="https://meet-git-user.netlify.app">
-                      <ExitToAppTwoTone className="" />
+                    <a href="https://github.com/mikail222/Git_search_app">
+                      <CodeSharp className="" />
                     </a>
                   </div>
 
@@ -361,11 +371,13 @@ const Home = () => {
                   <div className="mt-[1rem] lg:z-[1] lg:relative lg:right-[2rem] flex flex-col justify-end  items-end">
                     <p>Featured project</p>
                     <p className="title">Youtube Cloned</p>
-                    <p className="you">
-                      <strong> Youtube cloned</strong>: is a project that copy
-                      the features of Youtube in providing quality and
-                      standardized Movies,TV show and others
-                    </p>
+                    <a href="https://youtube-r.netlify.app">
+                      <p className="you">
+                        <strong> Youtube cloned</strong>: is a project that copy
+                        the features of Youtube in providing quality and
+                        standardized Movies,TV show and others
+                      </p>
+                    </a>
                     <p
                       className=" flex  flex-row gap-[0.5rem] lg:gap-4 
                 mt-6 lg:text-[1.2rem]"
@@ -376,13 +388,13 @@ const Home = () => {
                       <p>Redux</p>
                       <p>TMDB</p>
                     </p>
-                    <a href="https://youtube-r.netlify.app">
-                      <ExitToAppTwoTone className="" />
+                    <a href="https://github.com/mikail222/Movies-App">
+                      <CodeSharp className="" />
                     </a>
                   </div>
                   <img
                     src={image5}
-                    className="lg:hidden  h-[40vh] lg:h-[55vh] w-[100%] lg:w-[50%]"
+                    className="lg:hidden  h-[40vh] lg:h-[55vh] w-[100%] object-cover lg:w-[50%]"
                     alt="youtube"
                   />
                 </div>
@@ -403,6 +415,7 @@ const Home = () => {
               <img src={image5} alt="" className="project" />
             </div>
           </section>
+          <Testimony />
           <section id="contact" className="w-[95vw] lg:w-[100%]">
             <div className=" mt-[5rem] gap-[1.5rem] lg:mt-[13rem] flex flex-col justify-center items-center">
               <p className="w-[90%] text-center">
@@ -413,9 +426,9 @@ const Home = () => {
               </p>
               <p className="w-[90%] lg:w-[65%]  lg:leading-[1.7rem] lg:m-[3rem] text-center  lg:text-[1.4rem] ">
                 i'm easily accessible and open to new opportunities,all you need
-                is just click on the socio-media icons at the left side of the
-                page,perhaps you can also click on the email address at right
-                side of the page.
+                is just click on the socio-media icons at the top of the page,or
+                perhaps you can also click on the email address at bottom side
+                of the page.
               </p>
               <a href="mailto:abdulraheemmukaila6@gmail.com" target="_blank">
                 <button className=" text-[#f0c4f9]  text-[1.2rem]">
@@ -445,9 +458,8 @@ const Home = () => {
                 <GitHub className="socialMedias" />
               </a>
             </div>
-            <p className="copywrite text-center  mt-[5rem] lg:mt-[15rem]  col-[gray] mb-[3rem]">
-              Remixed and built by Abdulsamii Ajala,adopted by Abdulraheem
-              Mikail k.
+            <p className="copywrite text-center  mt-[5rem] lg:mt-[15rem] col-[gray] mb-[3rem]">
+              Remixed by Abdulraheem Mikail k.
             </p>
           </section>
         </aside>

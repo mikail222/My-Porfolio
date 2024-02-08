@@ -22,16 +22,16 @@
   @apply my-[1rem] lg:my-[2rem] mx-[0.85rem]  lg:ml-0 text-left md:ml-[40%];
 }
 .mikailPicture {
-  @apply w-[100%] lg:mt-[20%] flex  flex-col justify-center;
+  @apply w-[100%] lg:mt-[25%] flex  flex-col justify-center md:mt-[15rem];
 }
 .mikailPicture p {
-  @apply border-[2px] border-[white] w-[100%]  lg:w-[100%] md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh];
+  @apply border-[2px] border-[white] w-[100%]  lg:w-[100%] md:w-[30vw] md:h-[45vh] rounded-[5px] h-[40vh];
 }
 .mikailPicturelgscreen p {
   @apply border-[2px] border-[#c785d8]  ml-[15%] w-[77%]  md:w-[40vw] md:h-[45vh] rounded-[5px] h-[40vh] text-[transparent];
 }
 .mikailPicture img {
-  @apply rounded-[5px] md:w-[40vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-264px] object-cover lg:top-[-254px] md:ml-[7%] mb-[15%] lg:mb-[1%];
+  @apply rounded-[5px] md:w-[30vw] h-[40vh] md:h-[45vh] relative z-[1] md:top-[-224px] object-cover lg:top-[-254px] md:ml-[7%] mb-[15%] lg:mb-[1%];
 }
 
 .LinkCollection {
@@ -113,7 +113,7 @@
   @apply flex  flex-col justify-center  items-center;
 }
 .portfolio .div {
-  @apply w-[100%]  flex  lg:flex-row;
+  @apply w-[100%]  flex  md:flex-row lg:flex-row;
 }
 @media screen and (max-width: 992px) {
   .portfolio div {
@@ -229,4 +229,24 @@
 }
 .overlayProject:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+.clientPicture {
+  border-radius: 15px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid;
+  @apply w-0 h-0;
+}
+@media screen and (max-width: 480px) {
+  .clientPicture {
+    border-radius: 15px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-top: 100px solid;
+    @apply w-0 h-0;
+  }
+}
+.pLine::after {
+  box-shadow: 1px 1px 6px 1px white;
+  @apply w-[100%] h-[100vh] bg-[red];
 }
